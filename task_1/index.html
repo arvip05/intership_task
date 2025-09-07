@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Modern Registration Form</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h2>Modern Registration Form</h2>
+  </div>
+
+  <form class="registration-form" novalidate>
+    <h3>Student Registration Form</h3>
+    <div class="form-body">
+      
+      <!-- First and Last Name -->
+      <div class="row">
+        <div class="col-2">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required />
+        </div>
+        <div class="col-2">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required />
+        </div>
+      </div>
+
+      <!-- Date of Birth -->
+      <div class="row">
+        <label for="Birth">Date of Birth</label>
+        <div class="dob-selects col-1">
+          <select name="dobDay" id="dobDay" required aria-label="Day of Birth">
+            <option value="" disabled selected><b>Day</b></option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+            <option value="">13</option>
+            <option value="">14</option>
+            <option value="">15</option>
+            <option value="">16</option>
+            <option value="">17</option>
+            <option value="">18</option>
+            <option value="">19</option>
+            <option value="">20</option>
+            <option value="">21</option>
+            <option value="">22</option>
+            <option value="">23</option>
+            <option value="">24</option>
+            <option value="">25</option>
+            <option value="">26</option>
+            <option value="">27</option>
+            <option value="">28</option>
+            <option value="">29</option>
+            <option value="">30</option>
+            <option value="">31</option>
+          </select>
+          <select name="dobMonth" id="dobMonth" required aria-label="Month of Birth">
+            <option value="" disabled selected><b>Month</b></option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <select name="dobYear" id="dobYear" required aria-label="Year of Birth">
+            <option value="" disabled selected><b>Year</b></option>
+            <option value="">2005</option>
+            <option value="">2006</option>
+            <option value="">2007</option>
+            <option value="">2008</option>
+            <option value="">2009</option>
+            <option value="">2010</option>
+            <option value="">2011</option>
+            <option value="">2012</option>
+            <option value="">2013</option>
+            <option value="">2014</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Email and Mobile -->
+      <div class="row">
+        <div class="col-2">
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" placeholder="Enter email address" required />
+        </div>
+        <div class="col-2">
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}" minlength="10" maxlength="10" required />
+        </div>
+      </div>
+
+      <!-- Gender -->
+      <div class="row">
+        <label for="gender">Gender</label>
+        <div class="gender-group col-1" role="radiogroup" aria-labelledby="genderLabel">   
+          <div id="selectgener">
+            <label><input type="radio" name="gender" value="male" required /> <b>Male</b></label>
+            <label><input type="radio" name="gender" value="female" required /> <b>Female</b></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <div class="row">
+        <div class="col-1">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+        </div>
+      </div>
+
+      <!-- City, PIN, State -->
+      <div class="row">
+        <div class="col-3">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="Enter city" required />
+        </div>
+        <div class="col-3">
+          <label for="pinCode">PIN Code</label>
+          <input type="text" id="pinCode" name="pinCode" placeholder="Enter 6-digit PIN code" pattern="[0-9]{6}" maxlength="6" required />
+        </div>
+        <div class="col-3">
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" placeholder="Enter state" required />
+        </div>
+      </div>
+
+      <!-- Country -->
+      <div class="row">
+        <div class="col-1">
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected><b>Select country</b></option>
+            <option>United States</option>
+            <option>India</option>
+            <option>United Kingdom</option>
+            <option>Canada</option>
+            <option>Australia</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Hobbies -->
+      <div class="row">
+        <label>Hobbies</label>
+        <div class="hobbies-group col-1">
+          <label><input type="checkbox" name="hobbies" value="drawing" /><b>Drawing</b></label>
+          <label><input type="checkbox" name="hobbies" value="singing" /><b>Singing</b></label>
+          <label><input type="checkbox" name="hobbies" value="dancing" /><b>Dancing</b></label>
+          <label><input type="checkbox" name="hobbies" value="sketching"/><b>Sketching</b></label>
+          <label><input type="checkbox" name="hobbies" value="others"/><b>Others</b></label>
+        </div>
+      </div>
+
+      <!-- Qualification Table -->
+      <div class="row">
+        <label>Qualification</label>
+        <table class="qualification-table" aria-label="Qualification details">
+          <thead>
+            <tr>
+              <th>Sr.No.</th>
+              <th>Examination</th>
+              <th>Board</th>
+              <th>Percentage</th>
+              <th>Year of Passing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><b>Class X</b></td>
+              <td><input type="text" name="board_classX"/></td>
+              <td><input type="text" name="percentage_classX"/></td>
+              <td><input type="text" name="year_classX"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><b>Class XII</b></td>
+              <td><input type="text" name="board_classXII"  /></td>
+              <td><input type="text" name="percentage_classXII"  /></td>
+              <td><input type="text" name="year_classXII"  /></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><b>Graduation</b></td>
+              <td><input type="text" name="board_graduation" /></td>
+              <td><input type="text" name="percentage_graduation" /></td>
+              <td><input type="text" name="year_graduation" /></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><b>Masters</b></td>
+              <td><input type="text" name="board_masters" /></td>
+              <td><input type="text" name="percentage_masters" /></td>
+              <td><input type="text" name="year_masters" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Courses Applied For -->
+      <div class="row">
+        <label>Courses Applied For</label>
+        <div class="courses-group col-1" role="radiogroup" aria-labelledby="coursesLabel">
+          <label><input type="radio" name="course" value="BCA" required /><b>BCA</b></label>
+          <label><input type="radio" name="course" value="B.Com" /><b> B.Com</b></label>
+          <label><input type="radio" name="course" value="B.Sc" /><b>B.Sc</b></label>
+          <label><input type="radio" name="course" value="B.A" /> <b>B.A</b></label>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-group">
+        <input type="reset" value="Reset" />
+        <button type="submit">Submit</button>
+      </div>
+
+    </div>
+  </form>
+
+  <div class="header" style="margin-top: 40px; background:#e9f9f7; color:#44cb47;">
+    <h2 id="helo2">Professional Registration Form</h2>
+  </div>
+</body>
+</html>

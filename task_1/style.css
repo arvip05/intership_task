@@ -1,0 +1,264 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Header style */
+  .header {
+    background: white;
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-bottom: 30px;
+  }
+  .header h2 {
+    color: #2a52be; /* blue shade */
+    font-weight: 700;
+    margin: 0;
+  }
+  #helo2{
+    color: green;
+  }
+
+  /* Main form container */
+  form.registration-form {
+    background: linear-gradient(135deg, #eee4ee, #bdd9df23);
+    padding: 0;
+    width: 100%;
+    max-width: 720px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(165, 70, 149, 0.5);
+    color: white;
+  }
+
+  form.registration-form > h3 {
+     background: linear-gradient(45deg, #cb45cb, #e55d87);
+    padding: 20px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  form.registration-form .form-body {
+    background: #ffe6f0;
+    padding: 25px 30px;
+    color: #333;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  /* Label styles */
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+  }
+
+  /* Input and Select Styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px 10px;
+    font-size: 1rem;
+    
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    background-color: #fff;
+  }
+  
+
+  /* Row layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+
+  .col-2 {
+    flex: 1 1 45%;
+    
+  }
+
+  .col-1 {
+    flex: 1 1 100%;
+    
+  }
+
+  .col-3 {
+    flex: 1 1 30%;
+  }
+
+  .col-4 {
+    flex: 1 1 22%;
+  }
+
+  /* Date of birth selects inline */
+  .dob-selects {
+    display: flex;
+    gap: 23px;
+  }
+  .dob-selects select {
+    flex: 1;
+  }
+  
+
+  /* Gender radio buttons */
+  .gender-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 6px;
+  }
+  #selectgener{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .gender-group label {
+    font-weight: normal;
+    
+  }
+  
+  /* Textarea */
+  textarea {
+    resize: vertical;
+    min-height: 70px;
+  }
+
+  /* Hobbies checkboxes */
+  .hobbies-group {
+     display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  gap: 12px; /* spacing between items */
+  }
+  .hobbies-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Qualification table */
+  .qualification-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  .qualification-table th,
+  .qualification-table td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .qualification-table th {
+    background: #fff;
+    font-weight: 700;
+    color: #444;
+  }
+  .qualification-table td:first-child {
+    font-weight: 600;
+    text-align: left;
+  }
+  .qualification-table input {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+
+  /* Courses radio buttons */
+  .courses-group {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  .courses-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Buttons */
+  .btn-group {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  button,
+  input[type="reset"] {
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    
+  }
+  input[type="reset"] {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  input[type="reset"]:hover {
+    background: #f8f8f8;
+  }
+
+  button[type="submit"] {
+    background: linear-gradient(45deg, #cb45cb, #e55d87);
+    color: white;
+    font-weight: 700;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+  
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+    .col-2, .col-3, .col-4 {
+      flex: 1 1 100%;
+    }
+    .dob-selects select {
+      flex: 1 1 100%;
+    }
+    .gender-group, .hobbies-group, .courses-group {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
