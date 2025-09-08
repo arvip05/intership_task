@@ -222,7 +222,7 @@
   }
 
   button,
-  input[type="reset"] {
+  button[type="reset"] {
     padding: 8px 18px;
     border-radius: 8px;
     border: none;
@@ -230,12 +230,12 @@
     cursor: pointer;
     
   }
-  input[type="reset"] {
+  button[type="reset"] {
     background: #fff;
     color: #333;
     border: 1px solid #ccc;
   }
-  input[type="reset"]:hover {
+  button[type="reset"]:hover {
     background: #f8f8f8;
   }
 
